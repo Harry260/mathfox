@@ -1,0 +1,48 @@
+@media (max-width: 600px) {
+	.app-inner {
+		padding: 50px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.equation-input-box {
+		width: 100% !important;
+	}
+
+	.results-wrap {
+		position: absolute !important;
+		width: 100% !important;
+		bottom: 0;
+		left: 0;
+	}
+	.result-inner {
+		width: 100% !important;
+		bottom: -20px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		position: relative;
+	}
+}
+
+@media (max-width: 450px) {
+	.app-inner {
+		padding: 20px;
+	}
+
+	.sub-text h6 {
+		width: 100% !important;
+	}
+
+	.big-sc-text {
+		display: none;
+	}
+
+	.mob-icon {
+		display: block !important;
+	}
+}
+.mob-icon {
+	display: none;
+	margin-left: 10px;
+	font-size: 20px;
+}

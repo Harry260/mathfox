@@ -1,0 +1,7 @@
+/*| TODO: Have to bundle it with Webpack |*/
+
+@import "../src/css/responsive.css";
+@import "../src/css/animate.css";
+@import "../src/css/fonts.css";
+@import "../src/css/index.css";
+@import "../src/css/style.css";

@@ -1,0 +1,274 @@
+:root {
+	--primary-background: rgb(14, 14, 14);
+	--secondary-background: #16181c;
+	--third-background: rgba(41, 107, 221, 0.849);
+
+	--primary-color: #fafafa;
+	--secondary-color: rgba(255, 255, 255, 0.34);
+}
+
+:root .web-light {
+	--primary-background: #fff;
+	--secondary-background: #eaeaea;
+	--third-background: #f7d4d6;
+
+	--primary-color: rgb(14, 14, 14);
+	--secondary-color: #666;
+}
+
+body,
+html,
+.app-wrapper {
+	background: var(--primary-background);
+	color: var(--primary-color);
+	height: 100vh !important;
+	width: 100% !important;
+}
+
+.equation-input-box {
+	background-color: var(--secondary-background);
+	padding: 30px 40px;
+	border-radius: 15px;
+	width: 600px;
+}
+
+.input-text {
+	color: var(--primary-color);
+	font-family: "Poppins", sans-serif;
+	font-size: 23px;
+	font-weight: 600;
+	letter-spacing: -1px;
+	width: 100%;
+	text-align: center;
+}
+
+.hero-name {
+	margin-bottom: 20px;
+}
+
+.hero-name h1 {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 90px;
+	text-align: center;
+	letter-spacing: -0.07em;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: url(../../assets/images/mesh.jpg);
+	background-size: 100% 100%;
+}
+
+.hero-name h1:hover {
+	animation: gradient 1s ease-in-out;
+	background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.sub-text h6 {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: -0.5px;
+	width: 368px;
+	color: var(--secondary-color);
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--third-background);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 34px;
+	width: 34px;
+	left: 0px;
+	bottom: 0px;
+	background-color: var(--primary-color);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+/* input:checked + .slider {
+	background-color: #2196f3;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+} */
+
+input:checked + .slider:before,
+.slider i {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.theme-switcher i {
+	color: var(--secondary-color);
+	margin-right: 20px;
+}
+
+.results-wrap {
+	display: none;
+}
+
+.results {
+	z-index: 99;
+}
+
+.result-inner {
+	background-color: var(--secondary-background);
+	margin: 20px 0;
+	height: 200px;
+	width: 600px;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	position: relative;
+	overflow: hidden;
+}
+
+.bi-clipboard::before {
+	transform: scale(0.8) !important;
+}
+
+.result-top-bar {
+	padding: 10px;
+	justify-content: space-between;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	backdrop-filter: blur(10px);
+}
+
+.result-action-btn {
+	border-radius: 50%;
+	height: 30px !important;
+	width: 30px !important;
+	color: var(--secondary-color);
+	cursor: pointer;
+}
+
+.result-action-btn:hover {
+	background-color: var(--third-background);
+}
+
+.result-content {
+	height: 100%;
+	width: 100%;
+	font-size: 30px;
+	overflow-x: scroll;
+}
+
+.latex-view {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	padding: 0 50px;
+}
+
+.question-preview {
+	font-size: 10px;
+}
+
+[contenteditable="true"] {
+	white-space: nowrap;
+	width: 200px;
+	overflow: hidden;
+}
+[contenteditable="true"] br,
+[contenteditable="true"] img {
+	display: none;
+}
+[contenteditable="true"] * {
+	display: inline;
+	white-space: nowrap;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 50px 20px;
+}
+
+.header-wrapper {
+	justify-content: space-between;
+	width: 90%;
+}
+
+.logo-wrap img {
+	width: 50px;
+}
+
+nav {
+	margin-left: 20px;
+}
+
+nav a {
+	color: var(--secondary-color);
+	font-size: 15px;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+nav a:hover {
+	color: var(--primary-color);
+}
+
+.bottom-toast {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #0070f3;
+	padding: 10px 20px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.toast-error {
+	background-color: rgb(255, 89, 89);
+}

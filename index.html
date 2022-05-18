@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./dist/bundle.css" />
+
+		<!-- Primary Meta Tags -->
+		<title>Mathfox - Solve math problems with ease</title>
+		<meta name="title" content="Mathfox - Solve math problems with ease" />
+		<meta
+			name="description"
+			content="Mathfox is a simple web app which lets you solve maths problems with ease. No need of symbols, LaTex or anything, Just plain text!"
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://mathfox.vercel.app" />
+		<meta
+			property="og:title"
+			content="Mathfox - Solve math problems with ease"
+		/>
+		<meta
+			property="og:description"
+			content="Mathfox is a simple web app which lets you solve maths problems with ease. No need of symbols, LaTex or anything, Just plain text!"
+		/>
+		<meta property="og:image" content="./assets/images/banner.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://mathfox.vercel.app" />
+		<meta
+			property="twitter:title"
+			content="Mathfox - Solve math problems with ease"
+		/>
+		<meta
+			property="twitter:description"
+			content="Mathfox is a simple web app which lets you solve maths problems with ease. No need of symbols, LaTex or anything, Just plain text!"
+		/>
+		<meta property="twitter:image" content="./assets/images/banner.png" />
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon.svg"
+			type="image/x-icon"
+		/>
+	</head>
+	<body class="">
+		<div class="app-wrapper center unselectable">
+			<div class="header center">
+				<div class="header-wrapper v-center">
+					<div class="logo-wrap center">
+						<img src="./assets/images/favicon.svg" alt="mathfox" />
+						<nav class="center">
+							<a href="./tweet-this.html" target="_blank">
+								<span class="big-sc-text">tweet this</span>
+								<i class="mob-icon bi bi-twitter"></i>
+							</a>
+							<a
+								href="https://github.com/harry260/mathfox"
+								target="_blank"
+							>
+								<span class="big-sc-text">github</span>
+								<i class="mob-icon bi bi-github"></i>
+							</a>
+						</nav>
+					</div>
+					<div class="theme-switch">
+						<div class="theme-switcher center">
+							<i class="theme-icon bi bi-moon-stars-fill"></i>
+							<label class="switch">
+								<input
+									type="checkbox"
+									class="theme-checkbox"
+									checked
+								/>
+								<span class="slider"> </span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="app-inner">
+				<div class="hero-name">
+					<h1>Mathfox</h1>
+				</div>
+				<div class="logo-wrap"></div>
+				<div class="equation-input-box">
+					<div class="input-wrap">
+						<input
+							class="input-text"
+							id="eqn-input"
+							placeholder="math problem here"
+						/>
+					</div>
+					<div class="input-button-wrap"></div>
+				</div>
+				<div class="results-wrap center" id="result-wrapper">
+					<div class="result-inner">
+						<div class="result-top-bar v-center">
+							<div class="group-left v-center">
+								<div
+									class="result-action-btn center"
+									id="close-result"
+								>
+									<i class="bi bi-x-circle"></i>
+								</div>
+								<div
+									class="result-action-btn center copy-button"
+									id="copy-result"
+								>
+									<i class="bi bi-clipboard"></i>
+								</div>
+							</div>
+
+							<div
+								class="result-action-btn center copy-button"
+								id="copy-link"
+							>
+								<i class="bi bi-link-45deg"></i>
+							</div>
+						</div>
+						<div class="result-content center selectable">
+							<div class="lx-output latex-view center">
+								$x = 10 + 15 + \log_{10}\left( 100\right) +
+								\left(10 \cdot 5\right) +
+								\mathrm{sin}\left(90\right)$
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sub-text">
+					<h6>
+						type your equation or math problem above and trigger the
+						enter button to get it solved!
+					</h6>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  jax: ["input/TeX", "output/HTML-CSS"],
+		  extensions: ["tex2jax.js"],
+		  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+		  tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+		  TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+		      showMathMenu: false
+		});
+	</script>
+	<script
+		type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+	></script>
+
+	<script
+		data-name="BMC-Widget"
+		data-cfasync="false"
+		src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+		data-id="harrytom"
+		data-description="Support me on Buy me a coffee!"
+		data-message=""
+		data-color="#BD5FFF"
+		data-position="Right"
+		data-x_margin="18"
+		data-y_margin="18"
+	></script>
+
+	<script src="./dist/bundle.js"></script>
+</html>

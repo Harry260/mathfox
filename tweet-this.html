@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Primary Meta Tags -->
+		<title>Mathfox - Solve math problems with ease</title>
+		<meta name="title" content="Mathfox - Solve math problems with ease" />
+		<meta
+			name="description"
+			content="Mathfox is a simple web app which lets you solve maths problems with ease. No need of symbols, LaTex or anything, Just plain text!"
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://mathfox.vercel.app" />
+		<meta
+			property="og:title"
+			content="Mathfox - Solve math problems with ease"
+		/>
+		<meta
+			property="og:description"
+			content="Mathfox is a simple web app which lets you solve maths problems with ease. No need of symbols, LaTex or anything, Just plain text!"
+		/>
+		<meta property="og:image" content="./assets/images/banner.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://mathfox.vercel.app" />
+		<meta
+			property="twitter:title"
+			content="Mathfox - Solve math problems with ease"
+		/>
+		<meta
+			property="twitter:description"
+			content="Mathfox is a simple web app which lets you solve maths problems with ease. No need of symbols, LaTex or anything, Just plain text!"
+		/>
+		<meta property="twitter:image" content="./assets/images/banner.png" />
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon.svg"
+			type="image/x-icon"
+		/>
+	</head>
+	<script>
+		var tweetText = "";
+		var tweetList = [
+			"I just solved a math problem using Mathfox! Try it out!",
+			"Wanna solve a math problem? Try Mathfox!",
+			"Do you want to solve math problems with ease? Try Mathfox!",
+		];
+
+		const tweetUrl = new URL("https://twitter.com/intent/tweet");
+
+		tweetUrl.searchParams.append("url", location.origin);
+		tweetUrl.searchParams.append(
+			"text",
+			tweetList[Math.floor(Math.random() * tweetList.length)]
+		);
+		tweetUrl.searchParams.append(
+			"hashtags",
+			"math,mathfox,maths,mathsolver"
+		);
+
+		window.location.replace(tweetUrl);
+	</script>
+</html>
