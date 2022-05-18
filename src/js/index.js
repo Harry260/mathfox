@@ -1,6 +1,9 @@
 import SolveProblem from "./solve.js";
 import { closeResults, resultWrapper, eqnInput } from "./elements.js";
 import { initTheme } from "./themes.js";
+import splitbee from "@splitbee/web";
+
+splitbee.init();
 
 (function () {
 	let params = new URL(document.location).searchParams;
