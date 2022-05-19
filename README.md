@@ -13,12 +13,31 @@
 
 <br>
 
+# 📷 Screenshots
+
+| <img src="./assets/images/ScreenShot1.png"> | <img src="./assets/images/ScreenShot2.png"> |
+| ------------------------------------------- | ------------------------------------------- |
+| <img src="./assets/images/ScreenShot3.png"> | <img src="./assets/images/ScreenShot4.png"> |
+
+<br>
+
+# ⚡ Supported Stuff
+
+-   All together 100 + things you can try!
+
+-   Trigonometry
+-   Most Math functions
+-   Logarithms
+-   Exponents
+-   Square Roots
+-   Much more than you think! See [Nerdamer Docs](https://nerdamer.com/documentation.html)
+
 # `💪` Libraries used
 
--   Jquery
--   Clipboard.js
--   MathJax
--   Nerdamer
+-   [Jquery](https://github.com/jquery/jquery)
+-   [Clipboard.js](https://github.com/zenorocha/clipboard.js/)
+-   [MathJax](https://github.com/mathjax/MathJax)
+-   [Nerdamer](https://github.com/jiggzson/nerdamer)
 
 # `❤️` Support
 
